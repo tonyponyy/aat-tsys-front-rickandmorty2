@@ -1,0 +1,44 @@
+@if ( loaded) {
+
+<div class="text-center">
+  <img
+    class="card-img-top img-per"
+    src="{{ personaje.image }}"
+    alt="{{ personaje.name }}"
+  />
+</div>
+<div class="card-body text-center">
+  <h5 title="{{ personaje.status}}" class="card-title">
+    <b>{{ personaje.name }} {{ personaje.status | status }}</b>
+  </h5>
+</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <p><strong>Status:</strong> {{ personaje.status }}</p>
+  </li>
+  <li class="list-group-item">
+    <p><strong>Specie:</strong> {{ personaje.species }}</p>
+  </li>
+  <li class="list-group-item">
+    <p><strong>Gender:</strong> {{ personaje.gender }}</p>
+  </li>
+  <li class="list-group-item">
+    <p><strong>Origin:</strong> {{ personaje.origin.name }}</p>
+  </li>
+  <li class="list-group-item">
+    <p><strong>Location:</strong> {{ personaje.location.name }}</p>
+  </li>
+  <li class="list-group-item">
+    <p><strong>Episodes:</strong></p>
+    <ul>
+      @for (episode of personaje.episode; track $index) {
+      <li class="li-nostyle">
+        <a href="{{ episode }}" class="card-link">{{ episode }}</a>
+      </li>
+      }
+    </ul>
+  </li>
+</ul>
+}@else {
+<p>loading</p>
+}

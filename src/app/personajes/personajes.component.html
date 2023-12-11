@@ -1,0 +1,22 @@
+@if ( loaded) {
+<div class ="row  justify-content-center ">    
+@for (personaje of response.results; track $index) {
+  <div class="card m-2 col-2 " >
+    <img
+      class="card-img-top mt-3"
+      src="{{ personaje.image }}"
+      alt="Card image cap"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ personaje.name }}</h5>
+      <p class="card-text text-center"></p>
+      <div class="text-center">
+      <a [routerLink]="['/personaje', personaje.id]" class="btn btn-info">Ver más</a>
+    </div>
+    </div>
+  </div>
+} 
+</div>
+}@else {
+    <p>loading</p>
+}
