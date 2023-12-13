@@ -1,3 +1,6 @@
+Deploy:
+[Link](https://master.d2wdowosj15pba.amplifyapp.com)
+
 # Rickymorty
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
