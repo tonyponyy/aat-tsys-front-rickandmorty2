@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
 })
 export class CharactersService {
   protected http = inject(HttpClient);
-  protected add_url: string = 'http://localhost:3000/personajes';
-  protected get_url: string = 'http://localhost:3000/personajes';
+  protected add_url: string = 'https://aat-tsys-front-rickandmortyapi-production.up.railway.app/personajes';
+  protected get_url: string = 'https://aat-tsys-front-rickandmortyapi-production.up.railway.app/personajes';
 
   get_character(id :number) {
       let url: string = this.get_url + '/' + id;
