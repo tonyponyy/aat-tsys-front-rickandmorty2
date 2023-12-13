@@ -23,20 +23,10 @@
     <p><strong>Gender:</strong> {{ personaje.gender }}</p>
   </li>
   <li class="list-group-item">
-    <p><strong>Origin:</strong> {{ personaje.origin.name }}</p>
+    <p><strong>Origin:</strong> {{ personaje.origin }}</p>
   </li>
   <li class="list-group-item">
-    <p><strong>Location:</strong> {{ personaje.location.name }}</p>
-  </li>
-  <li class="list-group-item">
-    <p><strong>Episodes:</strong></p>
-    <ul>
-      @for (episode of personaje.episode; track $index) {
-      <li class="li-nostyle">
-        <a href="{{ episode }}" class="card-link">{{ episode }}</a>
-      </li>
-      }
-    </ul>
+    <p><strong>Location:</strong> {{ personaje.location }}</p>
   </li>
 </ul>
 }@else {

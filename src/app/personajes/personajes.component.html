@@ -1,9 +1,13 @@
+<div class="row">
+<a routerLink="/crear" class=" col-2 btn btn-info">Crear personaje</a>
+</div>
 @if ( loaded) {
 <div class ="row  justify-content-center ">    
-@for (personaje of response.results; track $index) {
+@for (personaje of response; track $index) {
   <div class="card m-2 col-2 " >
+    <button (click)="delete(personaje.id)"  type="button" class="btn-close" aria-label="Close"></button>
     <img
-      class="card-img-top mt-3"
+      class="card-img-top mt-3 personaje_img"
       src="{{ personaje.image }}"
       alt="Card image cap"
     />
@@ -12,6 +16,7 @@
       <p class="card-text text-center"></p>
       <div class="text-center">
       <a [routerLink]="['/personaje', personaje.id]" class="btn btn-info">Ver más</a>
+      <a [routerLink]="['/editar', personaje.id]" class="btn btn-warning">Editar</a>
     </div>
     </div>
   </div>

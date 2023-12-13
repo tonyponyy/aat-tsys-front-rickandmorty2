@@ -1,32 +1,33 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { HttpClientModule } from '@angular/common/http';
 import { RouterLink } from '@angular/router';
+import { CharactersService } from '../characters.service';
 
 @Component({
   selector: 'app-personajes',
   standalone: true,
-  imports: [HttpClientModule, RouterLink],
+  imports: [RouterLink],
   templateUrl: './personajes.component.html',
-  styleUrl: './personajes.component.css'
+  styleUrl: './personajes.component.css',
 })
 export class PersonajesComponent {
-  protected random_number :number = Math.trunc(Math.random()*42 +1)
-  protected url :string = "https://rickandmortyapi.com/api/character/?page="+this.random_number
-  protected  response :any;
-  protected loaded:boolean = false;
-  constructor(private http: HttpClient){}
-  ngOnInit(){
-    this.http.get(this.url).subscribe(
-      result =>{
-        this.response = result;
-        this.loaded=true
-      },
-      error =>{
-        console.log("error")
-      }
+  protected random_number: number = Math.trunc(Math.random() * 42 + 1);
+  protected url: string = 'http://localhost:3000/personajes';
+  protected response: any;
+  protected loaded: boolean = false;
+  constructor(public personajesservice: CharactersService) {}
 
-    )
+  delete(id: any){
+    this.personajesservice.delete_character(id).subscribe((data: any) => {
+      this.ngOnInit();
+    });
   }
-
+  ngOnInit() {
+    this.personajesservice.get_characters().subscribe((data: any) => {
+      this.response = data
+      if (this.response !=null){
+        this.loaded = true
+      }
+    });
+    
+  }
 }

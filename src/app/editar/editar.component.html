@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <h2>Character Information</h2>
+    <form id="characterForm"  [formGroup]="form_personaje" (ngSubmit)="enviar()">
+      <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="text" class="form-control" id="id" name="id"  formControlName="id" readonly >
+      </div>
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" class="form-control" id="name" name="name" formControlName="name" >
+      </div>
+      <div class="form-group">
+        <label for="status">Status:</label>
+        <input type="text" class="form-control" id="status" name="status"  formControlName="status">
+      </div>
+      <div class="form-group">
+        <label for="species">Especie:</label>
+        <input type="text" class="form-control" id="species" name="species" formControlName="species" >
+      </div>
+      <div class="form-group">
+        <label for="image">Imagen URL:</label>
+        <input type="text" class="form-control" id="image" name="image" formControlName="image" >
+      </div>
+      <div class="form-group">
+        <label for="gender">Genero:</label>
+        <input type="text" class="form-control" id="gender" name="gender" formControlName="gender">
+      </div>
+      <div class="form-group">
+        <label for="origin">Origen:</label>
+        <input type="text" class="form-control" id="origin" name="origin" formControlName="origin" >
+      </div>
+      <div class="form-group">
+        <label for="location">Localización:</label>
+        <input type="text" class="form-control" id="location" name="location" formControlName="location" >
+      </div>
+      <br>
+    </form>
+    <button type="submit" (click)="enviar()" class="btn btn-primary">Submit</button>
+  </div>

@@ -1,0 +1,64 @@
+{
+  "personajes": [
+    {
+      "id": 1,
+      "name": "Ricardo Sancheze",
+      "status": "Alive",
+      "species": "Human",
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "gender": "Male",
+      "origin": "Earth (C-137)",
+      "location": "Citadel of Ricks"
+    },
+    {
+      "id": "2",
+      "name": "Ricky martin serio",
+      "status": "Alive",
+      "species": "Human",
+      "image": "https://images.hola.com/imagenes/belleza/actualidad/20211002197015/ricky-martin-zanja-polemica-nueva-imagen/1-1-737/ricky-martin-gtres1-t.jpg",
+      "gender": "Male",
+      "origin": "Tierra ( Puerto rico)",
+      "location": "Tierra ( Puerto rico)"
+    },
+    {
+      "id": "3",
+      "name": "Ricky martin señalador",
+      "status": "Alive",
+      "species": "Human",
+      "image": "https://imgs.search.brave.com/uFh_erfw6FCKKCgLAMUw-TkBShuX8oewMnTqyRzpTrI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2Q4LzYx/LzQyL2Q4NjE0MmZm/Y2RkOGM2MjYzYTFk/YjhiODkwOTcxZTVm/LmpwZw",
+      "gender": "Male",
+      "origin": "Tierra ( Puerto rico)",
+      "location": "Tierra ( Puerto rico)"
+    },
+    {
+      "id": "4",
+      "name": "Ricky martin living la vida loca",
+      "status": "Alive",
+      "species": "Human",
+      "image": "https://imgs.search.brave.com/ONjsNTYmIC9DiDD_4Z2LNTSyBxRLnXesGDrD0MbVOHw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/c21laG9zdC5uZXQv/c29ueW11c2ljZXMt/NDVwcmVzc3Byb2Qv/d3AtY29udGVudC91/cGxvYWRzLzIwMTgv/MTAvZm90b19kZV9y/aWNreS1tYXJ0aW4t/MS5qcGc",
+      "gender": "Male",
+      "origin": "Tierra ( Puerto rico)",
+      "location": "Tierra ( Puerto rico)"
+    },
+    {
+      "id": "5",
+      "name": "Ricky martin elegante",
+      "status": "Alive",
+      "species": "Human",
+      "image": "https://imgs.search.brave.com/nJKAmCKsrhU5-HoPgQVsg4ahB_Qn-50sl7XtC6aUu4Q/rs:fit:860:0:0/g:ce/aHR0cDovL2hvbGx5/d29vZGxpZmUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIw/LzAxL3JpY2t5LW1h/cnRpbi00LmpwZz93/PTY4MA",
+      "gender": "Male",
+      "origin": "Tierra ( Puerto rico)",
+      "location": "Tierra ( Puerto rico)"
+    },
+    {
+      "id": "6",
+      "name": "Ricky martin joven",
+      "status": "Alive",
+      "species": "Human",
+      "image": "https://imgs.search.brave.com/5U7CR5sNTS4fdl-xYfmJmaXmafX1bw3e_UcLfuUalGo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/c21laG9zdC5uZXQv/c29ueW11c2ljZXMt/NDVwcmVzc3Byb2Qv/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MTEvYWI2NzYxNmQw/MDAwYjI3MzE0OGQ5/NWU4ZmYwOGZlMzEx/YzljOTk1ZC00MDB4/NDAwLmpwZw",
+      "gender": "Male",
+      "origin": "Tierra ( Puerto rico)",
+      "location": "Tierra ( Puerto rico)"
+    }
+  ]
+}
